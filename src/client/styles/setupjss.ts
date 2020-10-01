@@ -20,6 +20,9 @@ const jss = create({
 			reset: {
 				// Reset all inherited and non-inherited properties
 				...nonInheritedProps,
+				
+				// Exempt cursors from this stupid hack to "isolate"
+      				cursor: { isolate: false },
 
 				// “Global” styles for all components
 				boxSizing: 'border-box',
